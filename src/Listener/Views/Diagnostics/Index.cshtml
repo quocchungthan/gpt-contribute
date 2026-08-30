@@ -1,0 +1,5 @@
+@model Listener.Models.DiagnosticsViewModel
+@{ ViewData["Title"] = "Chẩn đoán"; }
+<section class="hero"><p class="eyebrow">TRẠNG THÁI THỰC</p><h1>Chẩn đoán</h1><p>Thông tin kỹ thuật được giữ riêng khỏi nội dung bản ghi.</p></section>
+<section class="card monitor"><h2>@Model.Monitor.State</h2><p>Cập nhật: @Model.Monitor.ObservedAtUtc.LocalDateTime · @(Model.Monitor.IsStale ? "Có thể đã cũ" : "Mới")</p><p>Khung nhận được: @Model.Monitor.FramesReceived · Đoạn đang ghi: @Model.Monitor.ActiveChunks</p></section>
+<section class="card"><h2>Sự kiện gần đây</h2><table><thead><tr><th>Thời gian</th><th>Mức</th><th>Mô tả</th></tr></thead><tbody>@foreach(var e in Model.Events){<tr><td>@e.OccurredAt.LocalDateTime</td><td>@e.Level</td><td>@e.Summary</td></tr>}</tbody></table></section>

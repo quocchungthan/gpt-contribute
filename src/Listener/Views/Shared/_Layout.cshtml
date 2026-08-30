@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ViewData["Title"] · Listener</title>
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+  <header><a asp-controller="Home" asp-action="Index" class="brand">Listener</a><nav><a asp-controller="Home" asp-action="Index">Trạng thái</a><a asp-controller="Recordings" asp-action="Index">Bản ghi</a><a asp-controller="Home" asp-action="Setup">Cài đặt</a><a asp-controller="Diagnostics" asp-action="Index">Chẩn đoán</a></nav></header>
+  <main>@RenderBody()</main>
+  <footer>Dữ liệu được lưu cục bộ · Listener không kết luận hành vi vi phạm.</footer>
+  @await RenderSectionAsync("Scripts", false)
+</body>
+</html>

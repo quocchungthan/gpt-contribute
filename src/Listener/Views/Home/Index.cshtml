@@ -1,0 +1,12 @@
+@model Listener.Models.DashboardViewModel
+@{ ViewData["Title"] = "Trạng thái"; var usedPercent = Model.MaximumBytes == 0 ? 0 : (int)(Model.UsedBytes * 100 / Model.MaximumBytes); var isListening = Model.Monitor.State == "Listening"; }
+<section class="hero"><p class="eyebrow">MICRÔ ĐÃ CHỌN · @Model.Preferences.SelectedDeviceName</p><h1>Trạng thái thu âm</h1><p>Thông tin bên dưới phản ánh trạng thái thật của tiến trình thu âm.</p></section>
+@if (usedPercent >= Model.WarningPercent) { <div class="toast">Dung lượng đã đạt @usedPercent%. Hãy xem lại các bản ghi.</div> }
+<div class="grid three">
+  <section class="card monitor @(isListening ? "ok" : "")"><p class="eyebrow">MONITORING</p><h2>@(isListening ? "Đang nghe và có thể lưu" : Model.Monitor.State == "Paused" ? "Đang tạm dừng" : Model.Monitor.State)</h2><p>Cập nhật: <time>@Model.Monitor.ObservedAtUtc.LocalDateTime</time> @(Model.Monitor.IsStale ? "· Dữ liệu có thể đã cũ" : "")</p><p>Lần thành công: @(Model.Monitor.LastSuccess ?? "Chưa có")</p>@if (Model.Monitor.LastFailure is not null) { <p class="danger-text">@Model.Monitor.LastFailure</p> }
+    <form asp-action="@(isListening ? "Pause" : "Start")" method="post"><button class="primary">@(isListening ? "Tạm dừng" : "Bắt đầu nghe")</button></form>
+    @if (!isListening) { <form asp-action="Start" method="post"><input type="hidden" name="test" value="true"/><button class="secondary">Kiểm tra micrô 5 giây</button></form> }
+  </section>
+  <section class="card"><h2>Hoạt động</h2><dl><dt>Khung âm thanh</dt><dd>@Model.Monitor.FramesReceived</dd><dt>Đoạn đang ghi</dt><dd>@Model.Monitor.ActiveChunks</dd><dt>Bản ghi</dt><dd>@Model.RecordingCount</dd><dt>Được bảo vệ</dt><dd>@Model.ProtectedCount</dd></dl></section>
+  <section class="card @(usedPercent >= Model.WarningPercent ? "warning" : "")"><h2>Dung lượng · @usedPercent%</h2><div class="meter"><span style="width:@Math.Min(100, usedPercent)%"></span></div><p>@Format.Bytes(Model.UsedBytes) / @Format.Bytes(Model.MaximumBytes)</p><p>Tự xóa bản ghi không bảo vệ sau 7 ngày.</p></section>
+</div>

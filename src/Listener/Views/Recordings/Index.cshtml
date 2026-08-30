@@ -1,0 +1,9 @@
+@model Listener.Models.LibraryViewModel
+@{ ViewData["Title"] = "Bản ghi"; }
+<section class="hero"><p class="eyebrow">THƯ VIỆN CỤC BỘ</p><h1>Bản ghi</h1><p>Sắp xếp theo tín hiệu để hỗ trợ xem lại. Các số đo không đánh giá mức độ quan trọng.</p></section>
+@if (TempData["Success"] is string success) { <div class="notice ok">@success</div> } @if (TempData["Error"] is string error) { <div class="notice danger">@error</div> }
+<form method="get" class="toolbar"><label>Sắp xếp <select name="sort" onchange="this.form.submit()"><option value="newest">Mới nhất</option><option value="oldest">Cũ nhất</option><option value="size">Kích thước</option><option value="duration">Thời lượng</option><option value="average">Âm lượng trung bình</option><option value="peak">Mức đỉnh</option><option value="speech">Tỷ lệ tiếng nói</option></select></label></form>
+<form method="post" id="selectionForm"><div class="toolbar"><button asp-action="Export" class="secondary">Xuất ZIP</button><button asp-action="Delete" class="danger-button" onclick="return confirm('Xóa các bản ghi đã chọn? Bản ghi được bảo vệ sẽ chặn toàn bộ thao tác.')">Xóa đã chọn</button></div>
+<div class="table-wrap"><table><thead><tr><th></th><th>Thời gian</th><th>Thời lượng</th><th>Kích thước</th><th>TB</th><th>Đỉnh</th><th>Tiếng nói</th><th>Bảo vệ</th></tr></thead><tbody>
+@foreach (var row in Model.Recordings) { <tr><td><input type="checkbox" name="ids" value="@row.Id" /></td><td><a asp-action="Details" asp-route-id="@row.Id">@row.StartedAt.LocalDateTime.ToString("dd/MM HH:mm")</a></td><td>@row.Duration.ToString(@"mm\:ss")</td><td>@Format.Bytes(row.ByteCount)</td><td>@row.AverageRms.ToString("P0")</td><td>@row.PeakLevel.ToString("P0")</td><td>@row.SpeechRatio.ToString("P0")</td><td>@(row.IsProtected ? "Đã bảo vệ" : "—")</td></tr> }
+</tbody></table></div></form>

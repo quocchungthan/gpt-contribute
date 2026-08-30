@@ -1,0 +1,19 @@
+@model Listener.Models.SetupViewModel
+@{ ViewData["Title"] = "Thiết lập"; }
+<section class="hero"><p class="eyebrow">BẮT ĐẦU AN TOÀN</p><h1>Thiết lập Listener</h1><p>Listener tạm giữ âm thanh trong bộ nhớ và tự động lưu các đoạn có khả năng chứa giọng nói từ micrô bạn chọn.</p></section>
+@if (Model.Message is not null) { <div class="notice danger">@Model.Message</div> }
+<div class="grid two">
+  <section class="card"><h2>Thông báo quan trọng</h2><p>Bạn chịu trách nhiệm tuân thủ pháp luật Việt Nam và chính sách nơi làm việc. Listener không đảm bảo bản ghi hợp pháp, được chấp nhận làm bằng chứng, hoặc chứng minh hành vi sai trái.</p><p>Ứng dụng chỉ lấy âm thanh từ micrô đã chọn, không lấy âm thanh hệ thống hoặc cuộc gọi.</p></section>
+  <section class="card"><h2>Chọn micrô</h2>
+    <form asp-action="SaveSetup" method="post">
+      <label><input type="checkbox" name="accepted" value="true" checked="@Model.Accepted" /> Tôi đã đọc và hiểu thông báo</label>
+      <label for="deviceId">Thiết bị đầu vào</label>
+      <select id="deviceId" name="deviceId" required>
+        <option value="">Chọn micrô…</option>
+        @foreach (var device in Model.Devices) { <option value="@device.Id" selected="@(device.Id == Model.SelectedDeviceId)">@device.Name</option> }
+      </select>
+      @if (Model.Devices.Count == 0) { <p class="muted">Không tìm thấy thiết bị. Chức năng micrô cần chạy trên Windows.</p> }
+      <button class="primary" type="submit">Lưu thiết lập</button>
+    </form>
+  </section>
+</div>

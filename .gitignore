@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+*.user
+*.db
+*.db-shm
+*.db-wal
+data/
+recordings/
+TestResults/
+/src/Listener/wwwroot/lib/
