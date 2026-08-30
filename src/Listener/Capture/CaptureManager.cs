@@ -50,7 +50,7 @@ public sealed class CaptureManager : IDisposable
         var operationId = Guid.NewGuid().ToString("N");
         if (!OperatingSystem.IsWindows())
         {
-            _monitor.Update(CaptureStatus.Faulted, operationId, failure: "Audio capture is available only on Windows.");
+            _monitor.Update(CaptureStatus.Faulted, operationId, failure: "Chức năng micrô chỉ khả dụng trên Windows.", errorCode: "PLATFORM_UNSUPPORTED", nextAction: "Chạy Listener trên máy Windows được hỗ trợ.", requiresUserAction: true);
             await _events.WriteAsync("capture.platform_unsupported", operationId, "Windows microphone capture is unavailable on this operating system.", "Error", ct);
             return operationId;
         }
@@ -59,7 +59,12 @@ public sealed class CaptureManager : IDisposable
         {
             if (_input is not null) return operationId;
             if (!int.TryParse(deviceId, out var deviceNumber) || deviceNumber < 0 || deviceNumber >= WaveInEvent.DeviceCount)
-                throw new InvalidOperationException("The selected microphone is unavailable.");
+            {
+                var failure = CaptureFailureClassifier.Missing();
+                _monitor.Update(CaptureStatus.Degraded, operationId, failure: failure.UserMessage, errorCode: failure.Code, nextAction: failure.NextAction, requiresUserAction: true);
+                _ = _events.WriteAsync("capture.user_action_required", operationId, $"{failure.Code}: {failure.UserMessage}", "Warning");
+                return operationId;
+            }
 
             _testMode = testMode;
             _monitor.Update(CaptureStatus.Starting, operationId);
@@ -72,7 +77,15 @@ public sealed class CaptureManager : IDisposable
             };
             _input.DataAvailable += OnDataAvailable;
             _input.RecordingStopped += OnRecordingStopped;
-            _input.StartRecording();
+            try { _input.StartRecording(); }
+            catch (Exception ex)
+            {
+                _input.Dispose(); _input = null;
+                var failure = CaptureFailureClassifier.Classify(ex);
+                _monitor.Update(CaptureStatus.Degraded, operationId, failure: failure.UserMessage, errorCode: failure.Code, nextAction: failure.NextAction, requiresUserAction: failure.RequiresUserAction);
+                _ = _events.WriteAsync("capture.user_action_required", operationId, $"{failure.Code}: {failure.UserMessage}", "Warning");
+                return operationId;
+            }
             _monitor.Update(CaptureStatus.Listening, operationId, testMode ? "Microphone test started." : "Listening started.");
         }
         await _events.WriteAsync(testMode ? "capture.test_started" : "capture.started", operationId, testMode ? "Microphone test started." : "Listening started.", ct: ct);
@@ -182,7 +195,9 @@ public sealed class CaptureManager : IDisposable
         if (e.Exception is not null)
         {
             _logger.LogError(e.Exception, "capture.failed");
-            _monitor.Update(CaptureStatus.Faulted, failure: "The microphone stopped unexpectedly.");
+            var failure = CaptureFailureClassifier.Classify(e.Exception);
+            _monitor.Update(failure.RequiresUserAction ? CaptureStatus.Degraded : CaptureStatus.Faulted, failure: failure.UserMessage, errorCode: failure.Code, nextAction: failure.NextAction, requiresUserAction: failure.RequiresUserAction);
+            _ = _events.WriteAsync(failure.RequiresUserAction ? "capture.user_action_required" : "capture.failed", Guid.NewGuid().ToString("N"), $"{failure.Code}: {failure.UserMessage}", failure.RequiresUserAction ? "Warning" : "Error");
         }
     }
 

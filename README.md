@@ -6,6 +6,8 @@ Privacy-first Windows microphone listener built with .NET 10 and ASP.NET Core MV
 
 This branch implements the local MVP workflows: Vietnamese onboarding, selected-device configuration, Windows microphone capture through NAudio, bounded pre-roll and automatic RMS speech chunking, WAV/SQLite persistence, monitoring JSON and UI, signal measurement sorting, protected-safe bulk deletion, seven-day retention, 5 GiB capacity behavior, diagnostics, and ZIP export.
 
+Capture faults are classified. Missing/disconnected hardware, denied Windows microphone permission, and exclusive device use are surfaced as user-action-required conditions with a concrete next step; Listener does not blindly retry or silently switch devices.
+
 It is not ready for real workplace use. The following require Windows implementation/validation before a pilot:
 
 - always-visible system-tray UI and tray Pause/Resume;
