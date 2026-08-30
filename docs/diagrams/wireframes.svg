@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1900" viewBox="0 0 1600 1900" role="img" aria-labelledby="title desc">
+  <title id="title">Listener MVP desktop wireframes</title>
+  <desc id="desc">Four desktop wireframes for setup, capture dashboard, recording library, and recording details and diagnostics.</desc>
+  <defs>
+    <style>
+      .page{fill:#eef1f7}.window{fill:#fff;stroke:#27324a;stroke-width:2}.bar{fill:#20293b}.nav{fill:#2d3850}.panel{fill:#fff;stroke:#bcc5d5;stroke-width:1.5}.soft{fill:#f5f7fb;stroke:#d2d8e3}.good{fill:#e5f7ed;stroke:#4d9c6b}.warn{fill:#fff2cf;stroke:#c98b17}.bad{fill:#fde7e7;stroke:#c84d4d}.button{fill:#345fca}.button2{fill:#fff;stroke:#345fca;stroke-width:1.5}.disabled{fill:#d9dde6}.txt{font:14px system-ui;fill:#27324a}.small{font:12px system-ui;fill:#58647c}.h1{font:700 23px system-ui;fill:#182033}.h2{font:700 17px system-ui;fill:#27324a}.white{font:14px system-ui;fill:#fff}.whiteb{font:700 16px system-ui;fill:#fff}.bold{font:700 14px system-ui;fill:#27324a}.line{stroke:#ccd3df}.check{fill:#fff;stroke:#66728b;stroke-width:1.5}.wave{stroke:#5277cf;stroke-width:2;fill:none}.pill{fill:#e7edfb}.pilltxt{font:700 11px system-ui;fill:#34528e}
+    </style>
+  </defs>
+  <rect class="page" width="1600" height="1900"/>
+  <text class="h1" x="50" y="45">Listener MVP — desktop wireframe set</text>
+
+  <!-- Screen 1 -->
+  <text class="h2" x="50" y="85">1. First run: informed setup and microphone test (US-001, US-002)</text>
+  <rect class="window" x="50" y="105" width="720" height="380" rx="10"/>
+  <rect class="bar" x="50" y="105" width="720" height="46" rx="10"/><rect class="bar" x="50" y="135" width="720" height="16"/>
+  <text class="whiteb" x="72" y="134">Listener</text><text class="white" x="670" y="134">Tiếng Việt ▾</text>
+  <text class="h1" x="85" y="195">Thiết lập an toàn</text>
+  <rect class="soft" x="85" y="215" width="650" height="70" rx="7"/><text class="txt" x="105" y="242">Listener tạm giữ âm thanh trong bộ nhớ và chỉ lưu đoạn có giọng nói.</text><text class="txt" x="105" y="267">Bạn chịu trách nhiệm tuân thủ pháp luật và chính sách tại nơi làm việc.</text>
+  <rect class="check" x="90" y="305" width="18" height="18"/><text class="txt" x="120" y="319">Tôi đã đọc và hiểu thông báo</text>
+  <text class="bold" x="90" y="358">Micrô đã chọn</text><rect class="soft" x="220" y="335" width="340" height="38" rx="5"/><text class="txt" x="235" y="360">USB Headset Microphone ▾</text>
+  <rect class="button2" x="575" y="335" width="130" height="38" rx="5"/><text class="bold" x="600" y="360">Kiểm tra mic</text>
+  <path class="wave" d="M90 405 l14 -8 14 17 14 -30 14 22 14 -10 14 6 14 -26 14 39 14 -18 14 8 14 -4 14 4 14 -15 14 22 14 -7 14 1 14 -10 14 12"/>
+  <rect class="button" x="570" y="410" width="135" height="42" rx="6"/><text class="whiteb" x="595" y="437">Tiếp tục</text>
+
+  <!-- Tray -->
+  <text class="h2" x="820" y="85">2. System tray: always visible</text>
+  <rect class="window" x="820" y="105" width="730" height="380" rx="10"/>
+  <rect class="soft" x="850" y="135" width="670" height="55"/><text class="txt" x="875" y="168">Windows taskbar</text><circle cx="1475" cy="162" r="14" fill="#3aaa67"/><circle cx="1475" cy="162" r="5" fill="#fff"/>
+  <rect class="window" x="1120" y="205" width="360" height="240" rx="8"/>
+  <text class="h2" x="1145" y="240">Listener</text><rect class="good" x="1325" y="220" width="125" height="30" rx="15"/><text class="bold" x="1350" y="240">Đang nghe</text>
+  <text class="small" x="1145" y="275">USB Headset Microphone</text>
+  <text class="small" x="1145" y="300">Lần lưu gần nhất: 10:14</text>
+  <rect class="button" x="1145" y="325" width="140" height="42" rx="6"/><text class="whiteb" x="1190" y="352">Tạm dừng</text>
+  <rect class="button2" x="1300" y="325" width="150" height="42" rx="6"/><text class="bold" x="1325" y="352">Mở Listener</text>
+  <text class="small" x="1145" y="405">Biểu tượng không thể ẩn khi ứng dụng đang chạy.</text>
+
+  <!-- Dashboard -->
+  <text class="h2" x="50" y="535">3. Capture dashboard with truthful Monitoring block (US-003, US-004, US-010)</text>
+  <rect class="window" x="50" y="555" width="1500" height="350" rx="10"/>
+  <rect class="bar" x="50" y="555" width="1500" height="48" rx="10"/><text class="whiteb" x="75" y="586">Listener</text><text class="white" x="1220" y="586">Bản ghi   Cài đặt   Chẩn đoán</text>
+  <text class="h1" x="80" y="650">Trạng thái thu âm</text>
+  <rect class="good" x="80" y="675" width="440" height="185" rx="8"/><text class="h2" x="105" y="708">● Đang nghe và có thể lưu</text><text class="txt" x="105" y="740">Micrô: USB Headset Microphone</text><text class="txt" x="105" y="767">Lần lưu gần nhất: 1 phút trước</text><text class="txt" x="105" y="794">Cập nhật: vừa xong</text><rect class="button" x="105" y="812" width="125" height="34" rx="5"/><text class="white" x="137" y="834">Tạm dừng</text>
+  <rect class="panel" x="550" y="675" width="440" height="185" rx="8"/><text class="h2" x="575" y="708">Hoạt động hiện tại</text><text class="txt" x="575" y="740">Mức micrô</text><rect class="soft" x="700" y="727" width="245" height="16" rx="8"/><rect x="700" y="727" width="120" height="16" rx="8" fill="#4e77d0"/><text class="txt" x="575" y="775">Đoạn đang lưu</text><text class="bold" x="850" y="775">0</text><text class="txt" x="575" y="807">Đoạn hôm nay</text><text class="bold" x="850" y="807">18</text><text class="txt" x="575" y="839">Âm thanh chờ xử lý</text><text class="bold" x="850" y="839">Không</text>
+  <rect class="warn" x="1020" y="675" width="490" height="185" rx="8"/><text class="h2" x="1045" y="708">Dung lượng: 4.1 / 5 GB</text><text class="txt" x="1045" y="740">Sắp đạt giới hạn. Hãy xem và xóa bản ghi không cần thiết.</text><rect class="soft" x="1045" y="760" width="420" height="18" rx="9"/><rect x="1045" y="760" width="344" height="18" rx="9" fill="#d59a24"/><text class="txt" x="1045" y="810">Được bảo vệ: 9 bản ghi · 1.4 GB</text><text class="txt" x="1045" y="838">Tự động xóa sau: 7 ngày</text>
+
+  <!-- Library -->
+  <text class="h2" x="50" y="955">4. Recording library: sort, protect, bulk delete, export (US-005, US-007–009, US-017)</text>
+  <rect class="window" x="50" y="975" width="1500" height="500" rx="10"/>
+  <rect class="bar" x="50" y="975" width="1500" height="48" rx="10"/><text class="whiteb" x="75" y="1006">Bản ghi</text>
+  <text class="h1" x="80" y="1055">Thư viện bản ghi</text>
+  <rect class="soft" x="80" y="1080" width="330" height="38" rx="5"/><text class="small" x="100" y="1104">Tìm theo tiêu đề hoặc thẻ…</text>
+  <rect class="soft" x="430" y="1080" width="260" height="38" rx="5"/><text class="txt" x="450" y="1105">Sắp xếp: Âm lượng TB ↑ ▾</text>
+  <rect class="button2" x="710" y="1080" width="120" height="38" rx="5"/><text class="bold" x="744" y="1105">Bộ lọc</text>
+  <rect class="button2" x="1175" y="1080" width="115" height="38" rx="5"/><text class="bold" x="1208" y="1105">Xuất</text><rect class="disabled" x="1305" y="1080" width="175" height="38" rx="5"/><text class="bold" x="1330" y="1105">Xóa đã chọn</text>
+  <rect class="soft" x="80" y="1138" width="1400" height="42"/><text class="bold" x="125" y="1164">Thời gian</text><text class="bold" x="360" y="1164">Thời lượng</text><text class="bold" x="500" y="1164">Kích thước</text><text class="bold" x="630" y="1164">Âm lượng TB</text><text class="bold" x="790" y="1164">Đỉnh</text><text class="bold" x="900" y="1164">Có tiếng nói</text><text class="bold" x="1060" y="1164">Trạng thái</text><text class="bold" x="1250" y="1164">Bảo vệ</text>
+  <g><rect class="check" x="92" y="1205" width="17" height="17"/><text class="txt" x="125" y="1220">30/08 · 10:14</text><text class="txt" x="360" y="1220">02:41</text><text class="txt" x="500" y="1220">3.8 MB</text><text class="txt" x="630" y="1220">Yên tĩnh</text><text class="txt" x="790" y="1220">-12 dB</text><text class="txt" x="900" y="1220">82%</text><text class="txt" x="1060" y="1220">Sẵn sàng</text><text class="txt" x="1260" y="1220">🔒 Có</text></g><line class="line" x1="80" y1="1240" x2="1480" y2="1240"/>
+  <g><rect class="check" x="92" y="1265" width="17" height="17"/><text class="txt" x="125" y="1280">30/08 · 09:42</text><text class="txt" x="360" y="1280">12:12</text><text class="txt" x="500" y="1280">17.1 MB</text><text class="txt" x="630" y="1280">Vừa</text><text class="txt" x="790" y="1280">-5 dB</text><text class="txt" x="900" y="1280">35%</text><text class="txt" x="1060" y="1280">Sẵn sàng</text><text class="txt" x="1260" y="1280">Không</text></g><line class="line" x1="80" y1="1300" x2="1480" y2="1300"/>
+  <g><rect class="check" x="92" y="1325" width="17" height="17"/><text class="txt" x="125" y="1340">29/08 · 16:18</text><text class="txt" x="360" y="1340">00:48</text><text class="txt" x="500" y="1340">1.2 MB</text><text class="txt" x="630" y="1340">Lớn</text><text class="txt" x="790" y="1340">-2 dB</text><text class="txt" x="900" y="1340">8%</text><text class="txt" x="1060" y="1340">Sẵn sàng</text><text class="txt" x="1260" y="1340">Không</text></g>
+  <rect class="warn" x="80" y="1380" width="1400" height="60" rx="6"/><text class="bold" x="105" y="1405">Không thể xóa lựa chọn</text><text class="txt" x="105" y="1428">Có 1 bản ghi được bảo vệ. Bỏ bảo vệ trước, sau đó thử lại. Không có bản ghi nào bị xóa.</text>
+
+  <!-- Details and diagnostics -->
+  <text class="h2" x="50" y="1525">5. Recording details and safe diagnostics</text>
+  <rect class="window" x="50" y="1545" width="900" height="300" rx="10"/><text class="h1" x="80" y="1590">Bản ghi · 30/08 10:14</text><rect class="pill" x="760" y="1565" width="150" height="28" rx="14"/><text class="pilltxt" x="790" y="1584">ĐƯỢC BẢO VỆ</text>
+  <rect class="soft" x="80" y="1610" width="830" height="58" rx="6"/><text class="txt" x="105" y="1645">▶ ━━━━━━━●━━━━━━━━  01:18 / 02:41     🔊</text>
+  <text class="bold" x="80" y="1705">Đo lường</text><text class="txt" x="80" y="1733">3.8 MB · Âm lượng TB: Yên tĩnh · Đỉnh: -12 dB · Có tiếng nói: 82%</text>
+  <text class="small" x="80" y="1760">Các số đo mô tả tín hiệu âm thanh, không đánh giá mức độ quan trọng.</text>
+  <rect class="button2" x="80" y="1785" width="150" height="38" rx="5"/><text class="bold" x="110" y="1810">Bỏ bảo vệ</text><rect class="disabled" x="245" y="1785" width="105" height="38" rx="5"/><text class="bold" x="278" y="1810">Xóa</text><rect class="button2" x="365" y="1785" width="105" height="38" rx="5"/><text class="bold" x="398" y="1810">Xuất</text>
+  <rect class="window" x="980" y="1545" width="570" height="300" rx="10"/><text class="h1" x="1010" y="1590">Chẩn đoán</text><rect class="good" x="1010" y="1610" width="510" height="70" rx="7"/><text class="h2" x="1035" y="1640">Mọi thứ đang hoạt động</text><text class="txt" x="1035" y="1665">Thông tin được cập nhật vừa xong.</text><text class="bold" x="1010" y="1718">Gần đây</text><text class="txt" x="1010" y="1748">10:14 · Đã lưu một đoạn ghi âm</text><text class="txt" x="1010" y="1776">10:12 · Micrô đã kết nối lại</text><text class="txt" x="1010" y="1804">09:55 · Dung lượng đã vượt 80%</text><rect class="button2" x="1340" y="1785" width="180" height="38" rx="5"/><text class="bold" x="1370" y="1810">Xuất chẩn đoán</text>
+</svg>
