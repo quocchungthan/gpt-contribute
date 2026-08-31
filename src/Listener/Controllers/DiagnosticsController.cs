@@ -11,7 +11,7 @@ public sealed class DiagnosticsController(IDbContextFactory<ListenerDbContext> d
     public async Task<IActionResult> Index(CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var events = await db.OperationalEvents.AsNoTracking().OrderByDescending(x => x.OccurredAt).Take(50).ToListAsync(ct);
+        var events = await db.OperationalEvents.AsNoTracking().OrderByDescending(x => x.Id).Take(50).ToListAsync(ct);
         return View(new DiagnosticsViewModel(monitor.Snapshot(), events));
     }
 
