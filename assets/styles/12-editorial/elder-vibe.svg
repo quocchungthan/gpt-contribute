@@ -1,38 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 12: Editorial - High fashion magazine aesthetic, serif typography, gold accents & elegant portrait -->
-  <rect width="500" height="500" rx="30" fill="#0f172a"/>
-
-  <!-- Gold Frame Border -->
-  <rect x="25" y="25" width="450" height="450" fill="none" stroke="#d97706" stroke-width="2"/>
-  <rect x="35" y="35" width="430" height="430" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 4"/>
-
-  <!-- Magazine Issue Header Text -->
-  <text x="250" y="75" fill="#f59e0b" font-family="'Times New Roman', Georgia, serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="4">THE VIBE CODE MAGAZINE • ISSUE NO. 01</text>
-
-  <!-- Big Serif Title Behind Head -->
-  <text x="250" y="140" fill="#334155" font-family="'Times New Roman', Georgia, serif" font-size="72" font-weight="900" text-anchor="middle" letter-spacing="-2">ELDER</text>
-
-  <!-- Elegant Line Portrait -->
-  <g transform="translate(0, 30)">
-    <!-- White Curled Hair (Fine Serif Lines) -->
-    <g fill="none" stroke="#ffffff" stroke-width="2">
-      <circle cx="170" cy="140" r="38"/>
-      <circle cx="210" cy="110" r="42"/>
-      <circle cx="250" cy="95" r="46"/>
-      <circle cx="290" cy="110" r="42"/>
-      <circle cx="330" cy="140" r="38"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <rect width="600" height="600" fill="#0f172a"/>
+  <rect x="30" y="30" width="540" height="540" fill="none" stroke="#d97706" stroke-width="3"/>
+  <rect x="42" y="42" width="516" height="516" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="10 5"/>
+  <text x="300" y="85" fill="#f59e0b" font-family="'Times New Roman', serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="5">THE VIBE CODE MAGAZINE • VOL. I</text>
+  <text x="300" y="160" fill="#334155" font-family="'Times New Roman', serif" font-size="86" font-weight="900" text-anchor="middle" letter-spacing="-3">ELDER</text>
+  <g transform="translate(50, 40)">
+    <g fill="none" stroke="#ffffff" stroke-width="2.5">
+      <circle cx="200" cy="160" r="44"/>
+      <circle cx="250" cy="125" r="50"/>
+      <circle cx="300" cy="110" r="54"/>
+      <circle cx="355" cy="125" r="50"/>
+      <circle cx="410" cy="160" r="44"/>
     </g>
-
-    <!-- Sunglasses (High Fashion Dark Shades) -->
-    <rect x="150" y="170" width="200" height="45" fill="#000000" stroke="#f59e0b" stroke-width="2"/>
-    <text x="250" y="198" fill="#f59e0b" font-family="'Times New Roman', serif" font-size="16" font-style="italic" text-anchor="middle">Vibe Coder</text>
-
-    <!-- Elegant Beard -->
-    <path d="M 155 220 C 130 270, 140 350, 185 375 C 215 395, 285 395, 315 375 C 360 350, 370 270, 345 220 C 330 270, 305 300, 250 305 C 195 300, 170 270, 155 220 Z" 
-          fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <rect x="180" y="200" width="240" height="54" fill="#000000" stroke="#f59e0b" stroke-width="3"/>
+    <text x="300" y="235" fill="#f59e0b" font-family="'Times New Roman', serif" font-size="20" font-style="italic" text-anchor="middle">Vibe Coder</text>
+    <path d="M 180 270 C 150 320, 155 420, 210 450 C 250 470, 350 470, 390 450 C 445 420, 450 320, 420 270 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
   </g>
-
-  <!-- Editorial Subtitle & Typography -->
-  <text x="250" y="440" fill="#ffffff" font-family="'Times New Roman', Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">"Wisdom in Experience, Speed in Code."</text>
-  <text x="250" y="465" fill="#f59e0b" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="3">ELDERVIBE.DEV</text>
+  <text x="300" y="525" fill="#ffffff" font-family="'Times New Roman', serif" font-size="24" font-style="italic" text-anchor="middle">"Wisdom in Experience, Speed in Code."</text>
+  <text x="300" y="555" fill="#f59e0b" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="4">ELDERVIBE.DEV</text>
 </svg>

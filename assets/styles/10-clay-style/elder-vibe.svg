@@ -1,43 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 10: Claymorphism - Soft rounded 3D clay aesthetic, inner & outer smooth drop shadows -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
   <defs>
-    <filter id="clayShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.3"/>
-    </filter>
+    <filter id="cShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="15" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.25"/></filter>
   </defs>
-
-  <rect width="500" height="500" rx="30" fill="#e0e7ff"/>
-
-  <!-- Background Clay Badge Card -->
-  <rect x="50" y="50" width="400" height="400" rx="40" fill="#f1f5f9" filter="url(#clayShadow)"/>
-
-  <g transform="translate(0, 15)">
-    <!-- 3D Clay Hair Curls (Soft Rounded White Clay) -->
-    <g fill="#ffffff" filter="url(#clayShadow)">
-      <circle cx="160" cy="140" r="38"/>
-      <circle cx="205" cy="110" r="42"/>
-      <circle cx="250" cy="95" r="46"/>
-      <circle cx="295" cy="110" r="42"/>
-      <circle cx="340" cy="140" r="38"/>
+  <rect width="600" height="600" fill="#e0e7ff"/>
+  <rect x="60" y="60" width="480" height="480" rx="50" fill="#f1f5f9" filter="url(#cShadow)"/>
+  <g transform="translate(50, 40)">
+    <g fill="#ffffff" filter="url(#cShadow)">
+      <circle cx="190" cy="160" r="44"/>
+      <circle cx="245" cy="125" r="50"/>
+      <circle cx="300" cy="110" r="54"/>
+      <circle cx="355" cy="125" r="50"/>
+      <circle cx="410" cy="160" r="44"/>
     </g>
-
-    <!-- Clay Headphone -->
-    <rect x="100" y="170" width="34" height="70" rx="17" fill="#818cf8" filter="url(#clayShadow)"/>
-    <rect x="366" y="170" width="34" height="70" rx="17" fill="#818cf8" filter="url(#clayShadow)"/>
-
-    <!-- Clay Face -->
-    <path d="M 160 180 C 160 280, 340 280, 340 180 Z" fill="#ffedd5" filter="url(#clayShadow)"/>
-
-    <!-- Soft 3D Clay Sunglasses -->
-    <rect x="150" y="175" width="200" height="48" rx="16" fill="#312e81" filter="url(#clayShadow)"/>
-    <rect x="162" y="183" width="80" height="32" rx="10" fill="#4f46e5"/>
-    <rect x="258" y="183" width="80" height="32" rx="10" fill="#4f46e5"/>
-
-    <!-- Soft 3D Clay Beard -->
-    <path d="M 155 240 C 130 280, 135 370, 180 395 C 210 415, 290 415, 320 395 C 365 370, 370 280, 345 240 C 330 285, 305 315, 250 320 C 195 315, 170 285, 155 240 Z" 
-          fill="#ffffff" filter="url(#clayShadow)"/>
+    <rect x="120" y="200" width="40" height="80" rx="20" fill="#818cf8" filter="url(#cShadow)"/>
+    <rect x="440" y="200" width="40" height="80" rx="20" fill="#818cf8" filter="url(#cShadow)"/>
+    <path d="M 190 200 C 190 310, 410 310, 410 200 Z" fill="#ffedd5" filter="url(#cShadow)"/>
+    <rect x="175" y="200" width="250" height="58" rx="20" fill="#312e81" filter="url(#cShadow)"/>
+    <rect x="190" y="210" width="100" height="38" rx="12" fill="#4f46e5"/>
+    <rect x="310" y="210" width="100" height="38" rx="12" fill="#4f46e5"/>
+    <path d="M 180 270 C 150 320, 155 420, 210 450 C 250 470, 350 470, 390 450 C 445 420, 450 320, 420 270 Z" fill="#ffffff" filter="url(#cShadow)"/>
   </g>
-
-  <rect x="140" y="420" width="220" height="36" rx="18" fill="#818cf8" filter="url(#clayShadow)"/>
-  <text x="250" y="443" fill="#ffffff" font-family="'Courier New', monospace" font-size="14" font-weight="900" text-anchor="middle">CLAY STYLE • VIBE</text>
 </svg>

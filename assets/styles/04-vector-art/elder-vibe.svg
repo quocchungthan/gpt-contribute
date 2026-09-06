@@ -1,42 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 04: Vector Art - Crisp flat vectors, smooth curves, vibrant spot colors & clean dark outlines -->
-  <rect width="500" height="500" rx="30" fill="#1e1b4b"/>
-  <circle cx="250" cy="250" r="210" fill="#312e81"/>
-
-  <g transform="translate(0, 10)">
-    <!-- Hoodie -->
-    <path d="M 120 450 C 120 350, 150 320, 250 320 C 350 320, 380 350, 380 450 Z" fill="#4338ca" stroke="#1e1b4b" stroke-width="4"/>
-
-    <!-- White Curled Hair (Flat Vector Layers) -->
-    <g fill="#f8fafc" stroke="#1e1b4b" stroke-width="4">
-      <circle cx="160" cy="140" r="38"/>
-      <circle cx="205" cy="110" r="42"/>
-      <circle cx="250" cy="95" r="46"/>
-      <circle cx="295" cy="110" r="42"/>
-      <circle cx="340" cy="140" r="38"/>
-      <circle cx="180" cy="160" r="30"/>
-      <circle cx="320" cy="160" r="30"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <rect width="600" height="600" rx="40" fill="#1e1b4b"/>
+  <circle cx="300" cy="300" r="240" fill="#312e81"/>
+  <g transform="translate(50, 30)">
+    <path d="M 140 480 C 140 370, 180 340, 300 340 C 420 340, 460 370, 460 480 Z" fill="#4338ca" stroke="#1e1b4b" stroke-width="5"/>
+    <g fill="#f8fafc" stroke="#1e1b4b" stroke-width="5">
+      <circle cx="190" cy="160" r="44"/>
+      <circle cx="245" cy="125" r="50"/>
+      <circle cx="300" cy="110" r="54"/>
+      <circle cx="355" cy="125" r="50"/>
+      <circle cx="410" cy="160" r="44"/>
     </g>
-
-    <!-- Headphones -->
-    <rect x="110" y="170" width="30" height="65" rx="15" fill="#f43f5e" stroke="#1e1b4b" stroke-width="4"/>
-    <rect x="360" y="170" width="30" height="65" rx="15" fill="#f43f5e" stroke="#1e1b4b" stroke-width="4"/>
-    <path d="M 130 190 C 130 80, 370 80, 370 190" fill="none" stroke="#f43f5e" stroke-width="16"/>
-
-    <!-- Face Base -->
-    <path d="M 160 180 C 160 280, 340 280, 340 180 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="4"/>
-
-    <!-- Vector Sunglasses -->
-    <rect x="155" y="180" width="190" height="50" rx="12" fill="#0284c7" stroke="#1e1b4b" stroke-width="4"/>
-    <rect x="165" y="188" width="75" height="34" rx="6" fill="#38bdf8"/>
-    <rect x="260" y="188" width="75" height="34" rx="6" fill="#38bdf8"/>
-
-    <!-- Full Vector Beard -->
-    <path d="M 155 240 C 130 280, 135 370, 180 395 C 210 415, 290 415, 320 395 C 365 370, 370 280, 345 240 C 330 285, 305 315, 250 320 C 195 315, 170 285, 155 240 Z" 
-          fill="#f8fafc" stroke="#1e1b4b" stroke-width="4"/>
-
-    <!-- Mustache -->
-    <path d="M 250 250 C 220 240, 175 250, 165 270 C 195 280, 230 275, 250 265 C 270 275, 305 280, 335 270 C 325 250, 280 240, 250 250 Z"
-          fill="#e2e8f0" stroke="#1e1b4b" stroke-width="3"/>
+    <rect x="135" y="195" width="36" height="75" rx="18" fill="#f43f5e" stroke="#1e1b4b" stroke-width="5"/>
+    <rect x="429" y="195" width="36" height="75" rx="18" fill="#f43f5e" stroke="#1e1b4b" stroke-width="5"/>
+    <path d="M 190 200 C 190 310, 410 310, 410 200 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="5"/>
+    <rect x="180" y="200" width="240" height="58" rx="14" fill="#0284c7" stroke="#1e1b4b" stroke-width="5"/>
+    <rect x="195" y="210" width="95" height="38" rx="8" fill="#38bdf8"/>
+    <rect x="310" y="210" width="95" height="38" rx="8" fill="#38bdf8"/>
+    <path d="M 180 270 C 150 320, 155 420, 210 450 C 250 470, 350 470, 390 450 C 445 420, 450 320, 420 270 Z" fill="#f8fafc" stroke="#1e1b4b" stroke-width="5"/>
   </g>
 </svg>

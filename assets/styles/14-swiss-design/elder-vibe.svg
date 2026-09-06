@@ -1,39 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 14: Swiss Design - International Typographic Style, rigid grid alignment, bold primary blocks & clean typography -->
-  <rect width="500" height="500" rx="30" fill="#f8fafc"/>
-
-  <!-- Bold Red Swiss Color Block -->
-  <rect x="40" y="40" width="180" height="420" fill="#dc2626"/>
-  <!-- Dark Accent Block -->
-  <rect x="220" y="320" width="240" height="140" fill="#0f172a"/>
-
-  <!-- Swiss Grid Alignment Lines -->
-  <line x1="220" y1="40" x2="220" y2="460" stroke="#0f172a" stroke-width="2"/>
-  <line x1="40" y1="180" x2="460" y2="180" stroke="#0f172a" stroke-width="2"/>
-
-  <!-- Swiss Typography (Helvetica style) -->
-  <text x="240" y="80" fill="#0f172a" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="900">ELDER</text>
-  <text x="240" y="115" fill="#0f172a" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="900">VIBE</text>
-  <text x="240" y="150" fill="#dc2626" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">CODER.</text>
-
-  <!-- Swiss Minimal Icon Vector inside Red Block -->
-  <g transform="translate(40, 160)">
-    <!-- White Curly Hair Arc Blocks -->
-    <circle cx="90" cy="50" r="30" fill="#ffffff"/>
-    <circle cx="60" cy="70" r="25" fill="#ffffff"/>
-    <circle cx="120" cy="70" r="25" fill="#ffffff"/>
-
-    <!-- Swiss Black Glasses -->
-    <rect x="40" y="90" width="100" height="30" fill="#0f172a"/>
-    <rect x="50" y="98" width="35" height="14" fill="#ffffff"/>
-    <rect x="95" y="98" width="35" height="14" fill="#ffffff"/>
-
-    <!-- Swiss Beard Block -->
-    <polygon points="40,130 140,130 120,200 60,200" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <rect width="600" height="600" fill="#f8fafc"/>
+  <rect x="50" y="50" width="220" height="500" fill="#dc2626"/>
+  <rect x="270" y="380" width="280" height="170" fill="#0f172a"/>
+  <line x1="270" y1="50" x2="270" y2="550" stroke="#0f172a" stroke-width="3"/>
+  <line x1="50" y1="210" x2="550" y2="210" stroke="#0f172a" stroke-width="3"/>
+  <text x="290" y="100" fill="#0f172a" font-family="'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="900">ELDER</text>
+  <text x="290" y="145" fill="#0f172a" font-family="'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="900">VIBE</text>
+  <text x="290" y="190" fill="#dc2626" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">CODER.</text>
+  <g transform="translate(50, 190)">
+    <circle cx="110" cy="70" r="36" fill="#ffffff"/>
+    <circle cx="75" cy="95" r="30" fill="#ffffff"/>
+    <circle cx="145" cy="95" r="30" fill="#ffffff"/>
+    <rect x="50" y="120" width="120" height="38" fill="#0f172a"/>
+    <rect x="62" y="130" width="42" height="18" fill="#ffffff"/>
+    <rect x="116" y="130" width="42" height="18" fill="#ffffff"/>
+    <polygon points="50,170 170,170 145,250 75,250" fill="#ffffff"/>
   </g>
-
-  <!-- Swiss Grid Footer Text inside Dark Block -->
-  <text x="240" y="360" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">DESIGN SYSTEM: 014</text>
-  <text x="240" y="390" fill="#94a3b8" font-family="monospace" font-size="12">SWISS TYPOGRAPHY</text>
-  <text x="240" y="420" fill="#dc2626" font-family="monospace" font-size="12" font-weight="bold">ELDERVIBE.DEV</text>
+  <text x="290" y="430" fill="#ffffff" font-family="monospace" font-size="16" font-weight="bold">SWISS SYSTEM: 014</text>
+  <text x="290" y="465" fill="#dc2626" font-family="monospace" font-size="14" font-weight="bold">ELDERVIBE.DEV</text>
 </svg>

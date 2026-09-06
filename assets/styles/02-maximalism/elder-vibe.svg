@@ -1,65 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 02: Maximalism - High density, chaotic neon patterns, stickers, text overlays & vibrant contrast -->
-  <defs>
-    <linearGradient id="maxBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff007f" />
-      <stop offset="33%" stop-color="#7f00ff" />
-      <stop offset="66%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#ffe600" />
-    </linearGradient>
-  </defs>
-
-  <rect width="500" height="500" rx="30" fill="#0d0221"/>
-  
-  <!-- Dense Background Patterns & Grid -->
-  <g opacity="0.25" stroke="#ffe600" stroke-width="1.5">
-    <path d="M 0 50 H 500 M 0 100 H 500 M 0 150 H 500 M 0 200 H 500 M 0 250 H 500 M 0 300 H 500 M 0 350 H 500 M 0 400 H 500 M 0 450 H 500"/>
-    <path d="M 50 0 V 500 M 100 0 V 500 M 150 0 V 500 M 200 0 V 500 M 250 0 V 500 M 300 0 V 500 M 350 0 V 500 M 400 0 V 500 M 450 0 V 500"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <rect width="600" height="600" fill="#0d0221"/>
+  <g opacity="0.25" stroke="#ffe600" stroke-width="2">
+    <path d="M 0 60 H 600 M 0 120 H 600 M 0 180 H 600 M 0 240 H 600 M 0 300 H 600 M 0 360 H 600 M 0 420 H 600 M 0 480 H 600 M 0 540 H 600"/>
+    <path d="M 60 0 V 600 M 120 0 V 600 M 180 0 V 600 M 240 0 V 600 M 300 0 V 600 M 360 0 V 600 M 420 0 V 600 M 480 0 V 600 M 540 0 V 600"/>
   </g>
-
-  <!-- Wild Sticker Badges & Text Overlay -->
-  <g font-family="monospace" font-weight="900" font-size="14">
-    <rect x="30" y="40" width="130" height="30" rx="15" fill="#ffe600" transform="rotate(-12 95 55)"/>
-    <text x="95" y="60" fill="#000" text-anchor="middle" transform="rotate(-12 95 55)">⚡ MAXIMUM VIBE</text>
-
-    <rect x="340" y="30" width="120" height="30" rx="6" fill="#ff007f" transform="rotate(8 400 45)"/>
-    <text x="400" y="50" fill="#fff" text-anchor="middle" transform="rotate(8 400 45)">100% CODE</text>
-
-    <circle cx="70" cy="420" r="45" fill="#00f2fe"/>
-    <text x="70" y="425" fill="#000" font-size="12" text-anchor="middle">OLD SCHOOL</text>
+  <g font-family="monospace" font-weight="900">
+    <rect x="40" y="50" width="160" height="40" rx="10" fill="#ffe600" transform="rotate(-10 120 70)"/>
+    <text x="120" y="75" fill="#000" font-size="14" text-anchor="middle" transform="rotate(-10 120 70)">⚡ MAXIMALIST VIBE</text>
+    <rect x="400" y="40" width="150" height="40" rx="10" fill="#ff007f" transform="rotate(12 475 60)"/>
+    <text x="475" y="65" fill="#fff" font-size="14" text-anchor="middle" transform="rotate(12 475 60)">ERR_404: NO CHILL</text>
+    <circle cx="90" cy="500" r="55" fill="#00f2fe"/>
+    <text x="90" y="505" fill="#000" font-size="13" text-anchor="middle">PURE CODE</text>
   </g>
-
-  <!-- Maximalist Character -->
-  <g transform="translate(0, 20)">
-    <!-- Curly Hair Extravaganza -->
-    <g fill="#ffffff" stroke="#000" stroke-width="4">
-      <circle cx="150" cy="130" r="45"/>
-      <circle cx="200" cy="95" r="50"/>
-      <circle cx="250" cy="80" r="55"/>
-      <circle cx="300" cy="95" r="50"/>
-      <circle cx="350" cy="130" r="45"/>
-      <circle cx="180" cy="150" r="35"/>
-      <circle cx="320" cy="150" r="35"/>
+  <g transform="translate(50, 40)">
+    <g fill="#ffffff" stroke="#000" stroke-width="5">
+      <circle cx="180" cy="150" r="50"/>
+      <circle cx="240" cy="110" r="55"/>
+      <circle cx="300" cy="95" r="60"/>
+      <circle cx="360" cy="110" r="55"/>
+      <circle cx="420" cy="150" r="50"/>
     </g>
-
-    <!-- Headset -->
-    <rect x="95" y="160" width="35" height="70" rx="10" fill="#ffe600" stroke="#000" stroke-width="4"/>
-    <rect x="370" y="160" width="35" height="70" rx="10" fill="#ffe600" stroke="#000" stroke-width="4"/>
-
-    <!-- Face -->
-    <path d="M 150 170 C 150 280, 350 280, 350 170 Z" fill="#ff758c" stroke="#000" stroke-width="4"/>
-
-    <!-- Crazy Sunglasses -->
-    <path d="M 140 175 L 360 175 L 340 235 L 160 235 Z" fill="#00f2fe" stroke="#000" stroke-width="5"/>
-    <text x="190" y="215" fill="#000" font-family="sans-serif" font-size="24" font-weight="900">V I B E</text>
-
-    <!-- Dense Curly Beard -->
-    <g fill="#ffffff" stroke="#000" stroke-width="4">
-      <path d="M 140 230 C 110 320, 130 420, 250 430 C 370 420, 390 320, 360 230 C 330 330, 170 330, 140 230 Z"/>
-    </g>
+    <path d="M 160 190 L 440 190 L 420 260 L 180 260 Z" fill="#00f2fe" stroke="#000" stroke-width="6"/>
+    <text x="230" y="240" fill="#000" font-family="sans-serif" font-size="28" font-weight="900">V I B E</text>
+    <path d="M 160 250 C 120 350, 150 470, 300 480 C 450 470, 480 350, 440 250 Z" fill="#ffffff" stroke="#000" stroke-width="6"/>
   </g>
-
-  <!-- Front Maximalist Badge Banner -->
-  <rect x="120" y="440" width="260" height="40" rx="10" fill="#ffe600" stroke="#000" stroke-width="4"/>
-  <text x="250" y="466" fill="#000" font-family="Impact, sans-serif" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="2">ELDER VIBE CODER</text>
+  <rect x="130" y="520" width="340" height="50" rx="12" fill="#ffe600" stroke="#000" stroke-width="5"/>
+  <text x="300" y="553" fill="#000" font-family="Impact, sans-serif" font-size="26" text-anchor="middle" letter-spacing="3">HIGH ENERGY MAXIMALISM</text>
 </svg>

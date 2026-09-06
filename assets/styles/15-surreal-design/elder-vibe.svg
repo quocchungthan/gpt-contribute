@@ -1,45 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 15: Surreal Design - Dreamlike Salvador Dali meets code, melting visors & floating elements -->
-  <defs>
-    <radialGradient id="surrealSky" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4c1d95"/>
-      <stop offset="60%" stop-color="#1e1b4b"/>
-      <stop offset="100%" stop-color="#090d16"/>
-    </radialGradient>
-  </defs>
-
-  <rect width="500" height="500" rx="30" fill="url(#surrealSky)"/>
-
-  <!-- Surreal Floating Eyeball / Spheres -->
-  <circle cx="90" cy="120" r="25" fill="#fef08a" stroke="#a855f7" stroke-width="2"/>
-  <circle cx="90" cy="120" r="10" fill="#090d16"/>
-  <circle cx="410" cy="140" r="35" fill="#38bdf8" opacity="0.7"/>
-
-  <!-- Surreal Melting Code Clock / Tree growing out of Hair -->
-  <g transform="translate(0, 10)">
-    <!-- Cloud / Tree White Hair -->
-    <g fill="#ffffff" stroke="#a855f7" stroke-width="2">
-      <circle cx="160" cy="140" r="38"/>
-      <circle cx="205" cy="110" r="42"/>
-      <circle cx="250" cy="95" r="46"/>
-      <circle cx="295" cy="110" r="42"/>
-      <circle cx="340" cy="140" r="38"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <rect width="600" height="600" fill="#1e1b4b"/>
+  <circle cx="110" cy="140" r="30" fill="#fef08a"/>
+  <circle cx="490" cy="160" r="45" fill="#38bdf8" opacity="0.6"/>
+  <g transform="translate(50, 40)">
+    <g fill="#ffffff" stroke="#a855f7" stroke-width="3">
+      <circle cx="190" cy="160" r="44"/>
+      <circle cx="245" cy="125" r="50"/>
+      <circle cx="300" cy="110" r="54"/>
+      <circle cx="355" cy="125" r="50"/>
+      <circle cx="410" cy="160" r="44"/>
     </g>
-    <!-- Code Branch Sprouting -->
-    <path d="M 250 95 Q 260 40 300 30 M 265 60 Q 230 40 220 20" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <circle cx="300" cy="30" r="6" fill="#fef08a"/>
-    <circle cx="220" cy="20" r="5" fill="#fef08a"/>
-
-    <!-- Surreal Melting Glasses (Dali style clock drip) -->
-    <path d="M 140 170 Q 250 160 360 170 C 360 210, 340 260, 310 270 C 280 280, 260 220, 240 220 C 220 220, 200 280, 170 270 C 140 260, 140 210, 140 170 Z" 
-          fill="#090d16" stroke="#38bdf8" stroke-width="4"/>
-    <text x="180" y="210" fill="#38bdf8" font-family="monospace" font-size="14">DREAM</text>
-    <text x="280" y="210" fill="#fef08a" font-family="monospace" font-size="14">CODE</text>
-
-    <!-- Floating Melting Beard -->
-    <path d="M 155 250 C 130 290, 120 370, 170 410 C 210 430, 290 430, 330 410 C 380 370, 370 290, 345 250 C 320 320, 180 320, 155 250 Z" 
-          fill="#ffffff" stroke="#a855f7" stroke-width="2"/>
+    <path d="M 170 200 Q 300 190 430 200 C 430 250, 405 310, 370 320 C 330 330, 310 260, 290 260 C 270 260, 250 330, 210 320 C 170 310, 170 250, 170 200 Z" fill="#090d16" stroke="#38bdf8" stroke-width="5"/>
+    <text x="220" y="245" fill="#38bdf8" font-family="monospace" font-size="16">DREAM</text>
+    <text x="340" y="245" fill="#fef08a" font-family="monospace" font-size="16">CODE</text>
+    <path d="M 180 290 C 150 340, 140 430, 200 470 C 250 490, 350 490, 400 470 C 460 430, 450 340, 420 290 Z" fill="#ffffff" stroke="#a855f7" stroke-width="3"/>
   </g>
-
-  <text x="250" y="465" fill="#fef08a" font-family="'Courier New', monospace" font-size="15" font-weight="bold" text-anchor="middle" letter-spacing="3">SURREALISM • ELDER VIBE</text>
 </svg>

@@ -1,54 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
-  <!-- Style 13: Y2K Cyber - Metallic chrome 4-point stars, tribal cyber curves, liquid pink/blue metallic gradient -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
   <defs>
-    <linearGradient id="y2kChrome" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="yChrome" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="33%" stop-color="#ffffff"/>
       <stop offset="66%" stop-color="#f472b6"/>
       <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
   </defs>
-
-  <rect width="500" height="500" rx="30" fill="#180b2b"/>
-
-  <!-- Y2K Metallic Chrome Stars -->
-  <g fill="url(#y2kChrome)">
-    <!-- Star 1 -->
-    <path d="M 80 80 Q 100 80 100 60 Q 100 80 120 80 Q 100 80 100 100 Q 100 80 80 80 Z"/>
-    <!-- Star 2 -->
-    <path d="M 380 90 Q 400 90 400 70 Q 400 90 420 90 Q 400 90 400 110 Q 400 90 380 90 Z"/>
-    <!-- Star 3 -->
-    <path d="M 70 380 Q 90 380 90 360 Q 90 380 110 380 Q 90 380 90 400 Q 90 380 70 380 Z"/>
+  <rect width="600" height="600" fill="#180b2b"/>
+  <g fill="url(#yChrome)">
+    <path d="M 90 90 Q 115 90 115 65 Q 115 90 140 90 Q 115 90 115 115 Q 115 90 90 90 Z"/>
+    <path d="M 460 100 Q 485 100 485 75 Q 485 100 510 100 Q 485 100 485 125 Q 485 100 460 100 Z"/>
   </g>
-
-  <!-- Y2K Tribal Cyber Ring Orbit -->
-  <ellipse cx="250" cy="250" rx="220" ry="80" fill="none" stroke="url(#y2kChrome)" stroke-width="5" transform="rotate(-15 250 250)"/>
-
-  <!-- Y2K Character -->
-  <g transform="translate(0, 10)">
-    <!-- White Curly Hair -->
+  <ellipse cx="300" cy="300" rx="260" ry="95" fill="none" stroke="url(#yChrome)" stroke-width="6" transform="rotate(-15 300 300)"/>
+  <g transform="translate(50, 40)">
     <g fill="#ffffff">
-      <circle cx="170" cy="140" r="36"/>
-      <circle cx="210" cy="115" r="40"/>
-      <circle cx="250" cy="100" r="44"/>
-      <circle cx="290" cy="115" r="40"/>
-      <circle cx="330" cy="140" r="36"/>
+      <circle cx="200" cy="160" r="42"/>
+      <circle cx="250" cy="130" r="48"/>
+      <circle cx="300" cy="115" r="52"/>
+      <circle cx="355" cy="130" r="48"/>
+      <circle cx="400" cy="160" r="42"/>
     </g>
-
-    <!-- Liquid Metallic Y2K Bug Glasses -->
-    <path d="M 140 170 Q 250 150 360 170 C 370 230, 290 260, 250 240 C 210 260, 130 230, 140 170 Z" 
-          fill="url(#y2kChrome)" stroke="#ffffff" stroke-width="3"/>
-    <ellipse cx="190" cy="195" rx="35" ry="20" fill="#180b2b"/>
-    <ellipse cx="310" cy="195" rx="35" ry="20" fill="#180b2b"/>
-    <text x="190" y="200" fill="#f472b6" font-family="sans-serif" font-size="12" font-weight="900" text-anchor="middle">Y2K</text>
-    <text x="310" y="200" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="900" text-anchor="middle">DEV</text>
-
-    <!-- Y2K Curled Beard -->
-    <path d="M 155 240 C 130 280, 140 360, 185 385 C 215 405, 285 405, 315 385 C 360 360, 370 280, 345 240 C 330 290, 305 320, 250 325 C 195 320, 170 290, 155 240 Z" 
-          fill="#ffffff" stroke="url(#y2kChrome)" stroke-width="3"/>
+    <path d="M 170 200 Q 300 175 430 200 C 445 270, 350 310, 300 285 C 250 310, 155 270, 170 200 Z" fill="url(#yChrome)" stroke="#ffffff" stroke-width="4"/>
+    <ellipse cx="230" cy="230" rx="42" ry="24" fill="#180b2b"/>
+    <ellipse cx="370" cy="230" rx="42" ry="24" fill="#180b2b"/>
+    <path d="M 180 280 C 150 330, 160 430, 215 460 C 255 480, 345 480, 385 460 C 440 430, 450 330, 420 280 Z" fill="#ffffff" stroke="url(#yChrome)" stroke-width="4"/>
   </g>
-
-  <!-- Y2K Bubble Badge -->
-  <rect x="130" y="440" width="240" height="40" rx="20" fill="url(#y2kChrome)"/>
-  <text x="250" y="466" fill="#180b2b" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle" letter-spacing="2">Y2K • ELDER VIBE</text>
 </svg>
