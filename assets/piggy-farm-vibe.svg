@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="piggyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180b24" />
+      <stop offset="50%" stop-color="#2a083b" />
+      <stop offset="100%" stop-color="#0b1329" />
+    </linearGradient>
+
+    <linearGradient id="piggySkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb6c1" />
+      <stop offset="100%" stop-color="#ff8da1" />
+    </linearGradient>
+
+    <linearGradient id="piggyGlasses" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#a371f7" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+
+    <linearGradient id="hairWhitePig" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <filter id="pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Badge Circle -->
+  <circle cx="250" cy="250" r="235" fill="url(#piggyBg)" stroke="#ff007f" stroke-width="6" filter="url(#pinkGlow)"/>
+  <circle cx="250" cy="250" r="222" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="10 6" opacity="0.6"/>
+
+  <!-- Background Piggy Farm Elements -->
+  <g opacity="0.15" fill="#ff007f" font-family="monospace" font-size="13" font-weight="bold">
+    <text x="60" y="100">piggy.harvest()</text>
+    <text x="60" y="125">yield = 1000000</text>
+    <text x="320" y="100">repo: piggy-farm</text>
+    <text x="320" y="125">eldervibe.dev</text>
+  </g>
+
+  <!-- Piggy Vibe Coder Character -->
+  <g transform="translate(0, 10)">
+    
+    <!-- Piggy Ears (Behind Hair) -->
+    <path d="M 120 170 L 80 110 L 150 140 Z" fill="#ff8da1" stroke="#ff007f" stroke-width="3"/>
+    <path d="M 125 165 L 95 120 L 145 145 Z" fill="#ffb6c1"/>
+    
+    <path d="M 380 170 L 420 110 L 350 140 Z" fill="#ff8da1" stroke="#ff007f" stroke-width="3"/>
+    <path d="M 375 165 L 405 120 L 355 145 Z" fill="#ffb6c1"/>
+
+    <!-- Hoodie / Sweater -->
+    <path d="M 110 460 C 110 360, 150 320, 250 320 C 350 320, 390 360, 390 460 Z" fill="#1e1b2e" stroke="#ff007f" stroke-width="3"/>
+    
+    <!-- White Curly Elder Hair -->
+    <g fill="url(#hairWhitePig)">
+      <circle cx="170" cy="150" r="36" />
+      <circle cx="210" cy="120" r="40" />
+      <circle cx="250" cy="105" r="44" />
+      <circle cx="290" cy="120" r="40" />
+      <circle cx="330" cy="150" r="36" />
+      
+      <circle cx="190" cy="165" r="28" />
+      <circle cx="310" cy="165" r="28" />
+      <circle cx="230" cy="135" r="34" />
+      <circle cx="270" cy="135" r="34" />
+    </g>
+
+    <!-- Headphones -->
+    <path d="M 130 190 C 130 80, 370 80, 370 190" fill="none" stroke="#111827" stroke-width="20"/>
+    <path d="M 130 190 C 130 80, 370 80, 370 190" fill="none" stroke="#ff007f" stroke-width="4" stroke-linecap="round" filter="url(#pinkGlow)"/>
+    <rect x="110" y="170" width="28" height="60" rx="14" fill="#111827" stroke="#ff007f" stroke-width="3"/>
+    <rect x="362" y="170" width="28" height="60" rx="14" fill="#111827" stroke="#ff007f" stroke-width="3"/>
+
+    <!-- Piggy Head -->
+    <ellipse cx="250" cy="225" rx="100" ry="85" fill="url(#piggySkin)" />
+
+    <!-- Cute Piggy Snout -->
+    <g filter="url(#pinkGlow)">
+      <ellipse cx="250" cy="235" rx="32" ry="22" fill="#ff758c" stroke="#ff007f" stroke-width="3"/>
+      <!-- Nostrils (Heart / Oval shaped) -->
+      <ellipse cx="238" cy="235" rx="7" ry="10" fill="#be123c"/>
+      <ellipse cx="262" cy="235" rx="7" ry="10" fill="#be123c"/>
+    </g>
+
+    <!-- Cyber Sunglasses -->
+    <g>
+      <path d="M 160 185 Q 250 180 340 185 L 335 230 Q 250 245 165 230 Z" fill="#090d16" stroke="#00f2fe" stroke-width="4"/>
+      <path d="M 170 192 L 240 192 L 235 225 Q 200 235 172 225 Z" fill="url(#piggyGlasses)"/>
+      <path d="M 260 192 L 330 192 L 328 225 Q 300 235 265 225 Z" fill="url(#piggyGlasses)"/>
+      <text x="178" y="212" fill="#ffffff" font-family="monospace" font-size="10" font-weight="900">PIGGY</text>
+      <text x="272" y="212" fill="#ffffff" font-family="monospace" font-size="10" font-weight="900">FARM</text>
+    </g>
+
+    <!-- White Curled Beard & Mustache -->
+    <g fill="url(#hairWhitePig)">
+      <!-- Mustache -->
+      <path d="M 250 252 C 220 242, 175 252, 165 272 C 195 282, 230 278, 250 266 C 270 278, 305 282, 335 272 C 325 252, 280 242, 250 252 Z"/>
+      <!-- Main Beard -->
+      <path d="M 160 255 C 135 295, 140 360, 185 390 C 215 410, 285 410, 315 390 C 360 360, 365 295, 340 255 C 325 305, 305 330, 250 335 C 195 330, 175 305, 160 255 Z"/>
+    </g>
+    <path d="M 200 350 Q 215 375 230 360" fill="none" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 300 350 Q 285 375 270 360" fill="none" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Piggy Farm Badge Text -->
+    <rect x="150" y="415" width="200" height="34" rx="17" fill="#090d16" stroke="#ff007f" stroke-width="2"/>
+    <text x="250" y="437" fill="#ff758c" font-family="'Courier New', monospace" font-size="13" font-weight="900" text-anchor="middle" letter-spacing="1">PIGGY FARM • ELDER VIBE</text>
+
+  </g>
+</svg>

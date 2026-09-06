@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#31104b" />
+    </linearGradient>
+
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="shades" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="hairWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="500" height="500" rx="40" fill="url(#avBg)" />
+  <!-- Cyber Outer Border -->
+  <rect x="12" y="12" width="476" height="476" rx="32" fill="none" stroke="url(#neonBorder)" stroke-width="5" filter="url(#glowEffect)" opacity="0.85"/>
+  
+  <!-- Subtle Background Grid -->
+  <path d="M 0 100 H 500 M 0 200 H 500 M 0 300 H 500 M 0 400 H 500 M 100 0 V 500 M 200 0 V 500 M 300 0 V 500 M 400 0 V 500" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.07"/>
+
+  <!-- Character Group -->
+  <g transform="translate(0, 15)">
+    <!-- Hoodie -->
+    <path d="M 90 480 C 90 350, 140 310, 250 310 C 360 310, 410 350, 410 480 Z" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+    <path d="M 180 320 L 250 420 L 320 320" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Headphones Band -->
+    <path d="M 120 200 C 120 70, 380 70, 380 200" fill="none" stroke="#1e293b" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 120 200 C 120 70, 380 70, 380 200" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" filter="url(#glowEffect)"/>
+
+    <!-- White Curly Hair Back & Side Swirls -->
+    <g fill="url(#hairWhite)">
+      <circle cx="150" cy="140" r="42" />
+      <circle cx="195" cy="105" r="48" />
+      <circle cx="250" cy="90" r="52" />
+      <circle cx="305" cy="105" r="48" />
+      <circle cx="350" cy="140" r="42" />
+      
+      <circle cx="170" cy="165" r="32" />
+      <circle cx="330" cy="165" r="32" />
+      <circle cx="215" cy="130" r="38" />
+      <circle cx="285" cy="130" r="38" />
+    </g>
+
+    <!-- Headphone Ear Cups -->
+    <rect x="100" y="170" width="34" height="75" rx="17" fill="#0f172a" stroke="#38bdf8" stroke-width="3.5" filter="url(#glowEffect)"/>
+    <rect x="366" y="170" width="34" height="75" rx="17" fill="#0f172a" stroke="#38bdf8" stroke-width="3.5" filter="url(#glowEffect)"/>
+    <circle cx="117" cy="207" r="10" fill="#a855f7"/>
+    <circle cx="383" cy="207" r="10" fill="#a855f7"/>
+
+    <!-- Face Structure -->
+    <path d="M 155 180 C 155 295, 345 295, 345 180 Z" fill="url(#skin)" />
+
+    <!-- Bushy White Eyebrows -->
+    <path d="M 170 175 Q 200 155 230 175" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 270 175 Q 300 155 330 175" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Cyber Sunglasses -->
+    <g>
+      <path d="M 148 180 Q 250 174 352 180 L 345 238 Q 250 255 155 238 Z" fill="#090d16" stroke="#38bdf8" stroke-width="4"/>
+      <path d="M 160 188 L 240 188 L 234 232 Q 195 242 165 232 Z" fill="url(#shades)"/>
+      <path d="M 260 188 L 340 188 L 335 232 Q 305 242 266 232 Z" fill="url(#shades)"/>
+      
+      <!-- Reflections & Code graphics -->
+      <polygon points="165,190 205,190 180,228 165,228" fill="#ffffff" opacity="0.35"/>
+      <polygon points="265,190 305,190 280,228 265,228" fill="#ffffff" opacity="0.35"/>
+      
+      <text x="175" y="210" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="900">&lt;VIBE&gt;</text>
+      <text x="272" y="210" fill="#ec4899" font-family="monospace" font-size="10" font-weight="900">.DEV</text>
+      
+      <rect x="238" y="190" width="24" height="7" rx="3.5" fill="#38bdf8"/>
+    </g>
+
+    <!-- Nose -->
+    <path d="M 240 220 Q 250 245 260 220" fill="none" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Full White Curly Beard & Mustache -->
+    <g fill="url(#hairWhite)">
+      <!-- Mustache -->
+      <path d="M 250 248 C 215 238, 165 248, 155 270 C 185 282, 230 275, 250 262 C 270 275, 315 282, 345 270 C 335 248, 285 238, 250 248 Z"/>
+      <!-- Main Beard -->
+      <path d="M 150 245 C 120 285, 130 360, 175 395 C 205 420, 295 420, 325 395 C 370 360, 380 285, 350 245 C 335 295, 310 330, 250 335 C 190 330, 165 295, 150 245 Z" />
+    </g>
+    
+    <!-- Beard Curls Accents -->
+    <path d="M 185 345 Q 200 375 220 360" fill="none" stroke="#cbd5e1" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 315 345 Q 300 375 280 360" fill="none" stroke="#cbd5e1" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 235 385 Q 250 400 265 385" fill="none" stroke="#cbd5e1" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Chest Tag -->
+    <text x="250" y="445" fill="#38bdf8" font-family="'Courier New', monospace" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">eldervibe.dev</text>
+  </g>
+</svg>
