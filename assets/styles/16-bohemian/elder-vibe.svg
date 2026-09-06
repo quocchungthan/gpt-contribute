@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Style 16: Bohemian - Earthy organic terracotta palette, botanical sunbursts & organic hair curls -->
+  <rect width="500" height="500" rx="30" fill="#fdf6e3"/>
+
+  <!-- Boho Sunburst Circle -->
+  <circle cx="250" cy="220" r="160" fill="#e07a5f" opacity="0.3"/>
+  <circle cx="250" cy="220" r="130" fill="#f4a261" opacity="0.5"/>
+
+  <!-- Botanical Leaves Accents -->
+  <g stroke="#2d6a4f" stroke-width="2" fill="none">
+    <path d="M 60 200 Q 90 150 70 100 Q 110 130 60 200 Z" fill="#2d6a4f"/>
+    <path d="M 440 200 Q 410 150 430 100 Q 390 130 440 200 Z" fill="#2d6a4f"/>
+  </g>
+
+  <!-- Boho Character -->
+  <g transform="translate(0, 10)">
+    <!-- Organic Curled Hair (Warm Cream White & Terracotta outlines) -->
+    <g fill="#fdf6e3" stroke="#e07a5f" stroke-width="3">
+      <circle cx="160" cy="140" r="38"/>
+      <circle cx="205" cy="110" r="42"/>
+      <circle cx="250" cy="95" r="46"/>
+      <circle cx="295" cy="110" r="42"/>
+      <circle cx="340" cy="140" r="38"/>
+    </g>
+
+    <!-- Boho Round Glasses -->
+    <circle cx="195" cy="190" r="32" fill="#264653" stroke="#e07a5f" stroke-width="4"/>
+    <circle cx="305" cy="190" r="32" fill="#264653" stroke="#e07a5f" stroke-width="4"/>
+    <line x1="227" y1="190" x2="273" y2="190" stroke="#e07a5f" stroke-width="4"/>
+    <text x="195" y="195" fill="#fdf6e3" font-family="serif" font-size="14" text-anchor="middle">VIBE</text>
+    <text x="305" y="195" fill="#fdf6e3" font-family="serif" font-size="14" text-anchor="middle">CODE</text>
+
+    <!-- Organic Curly Beard -->
+    <path d="M 155 235 C 130 275, 140 355, 185 380 C 215 400, 285 400, 315 380 C 360 355, 370 275, 345 235 C 330 285, 305 315, 250 320 C 195 315, 170 285, 155 235 Z" 
+          fill="#fdf6e3" stroke="#e07a5f" stroke-width="3"/>
+  </g>
+
+  <!-- Boho Ribbon -->
+  <text x="250" y="460" fill="#264653" font-family="'Georgia', serif" font-size="18" font-style="italic" text-anchor="middle">~ Bohemian Elder Vibe ~</text>
+</svg>

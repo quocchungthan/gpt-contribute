@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Style 14: Swiss Design - International Typographic Style, rigid grid alignment, bold primary blocks & clean typography -->
+  <rect width="500" height="500" rx="30" fill="#f8fafc"/>
+
+  <!-- Bold Red Swiss Color Block -->
+  <rect x="40" y="40" width="180" height="420" fill="#dc2626"/>
+  <!-- Dark Accent Block -->
+  <rect x="220" y="320" width="240" height="140" fill="#0f172a"/>
+
+  <!-- Swiss Grid Alignment Lines -->
+  <line x1="220" y1="40" x2="220" y2="460" stroke="#0f172a" stroke-width="2"/>
+  <line x1="40" y1="180" x2="460" y2="180" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Swiss Typography (Helvetica style) -->
+  <text x="240" y="80" fill="#0f172a" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="900">ELDER</text>
+  <text x="240" y="115" fill="#0f172a" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="900">VIBE</text>
+  <text x="240" y="150" fill="#dc2626" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">CODER.</text>
+
+  <!-- Swiss Minimal Icon Vector inside Red Block -->
+  <g transform="translate(40, 160)">
+    <!-- White Curly Hair Arc Blocks -->
+    <circle cx="90" cy="50" r="30" fill="#ffffff"/>
+    <circle cx="60" cy="70" r="25" fill="#ffffff"/>
+    <circle cx="120" cy="70" r="25" fill="#ffffff"/>
+
+    <!-- Swiss Black Glasses -->
+    <rect x="40" y="90" width="100" height="30" fill="#0f172a"/>
+    <rect x="50" y="98" width="35" height="14" fill="#ffffff"/>
+    <rect x="95" y="98" width="35" height="14" fill="#ffffff"/>
+
+    <!-- Swiss Beard Block -->
+    <polygon points="40,130 140,130 120,200 60,200" fill="#ffffff"/>
+  </g>
+
+  <!-- Swiss Grid Footer Text inside Dark Block -->
+  <text x="240" y="360" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">DESIGN SYSTEM: 014</text>
+  <text x="240" y="390" fill="#94a3b8" font-family="monospace" font-size="12">SWISS TYPOGRAPHY</text>
+  <text x="240" y="420" fill="#dc2626" font-family="monospace" font-size="12" font-weight="bold">ELDERVIBE.DEV</text>
+</svg>

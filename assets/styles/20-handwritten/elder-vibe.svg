@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Style 20: Handwritten Sketch - Ink notebook sketch, hand-drawn stroke texture & doodle annotations -->
+  <rect width="500" height="500" rx="30" fill="#fffbeb"/>
+
+  <!-- Lined Notebook Background Lines -->
+  <g stroke="#cbd5e1" stroke-width="1.5">
+    <line x1="0" y1="80" x2="500" y2="80"/>
+    <line x1="0" y1="130" x2="500" y2="130"/>
+    <line x1="0" y1="180" x2="500" y2="180"/>
+    <line x1="0" y1="230" x2="500" y2="230"/>
+    <line x1="0" y1="280" x2="500" y2="280"/>
+    <line x1="0" y1="330" x2="500" y2="330"/>
+    <line x1="0" y1="380" x2="500" y2="380"/>
+    <line x1="0" y1="430" x2="500" y2="430"/>
+  </g>
+  <!-- Red Margin Line -->
+  <line x1="70" y1="0" x2="70" y2="500" stroke="#f87171" stroke-width="2"/>
+
+  <!-- Handwritten Character Sketch (Casual Ballpoint Pen Ink) -->
+  <g transform="translate(0, 10)" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Handwritten Hair Loops -->
+    <path d="M 150 140 C 130 110, 170 90, 190 120 C 200 80, 240 80, 250 100 C 270 70, 310 90, 310 120 C 330 100, 370 120, 350 150 Z" 
+          fill="#ffffff"/>
+
+    <!-- Handwritten Eyeglasses -->
+    <rect x="150" y="170" width="85" height="40" rx="8" fill="#1e293b"/>
+    <rect x="265" y="170" width="85" height="40" rx="8" fill="#1e293b"/>
+    <line x1="235" y1="190" x2="265" y2="190" stroke="#1e293b" stroke-width="4"/>
+    <text x="192" y="195" fill="#fffbeb" font-family="'Comic Sans MS', cursive, sans-serif" font-size="12" text-anchor="middle">vibe</text>
+    <text x="307" y="195" fill="#fffbeb" font-family="'Comic Sans MS', cursive, sans-serif" font-size="12" text-anchor="middle">code</text>
+
+    <!-- Handwritten Beard Sketch -->
+    <path d="M 155 225 Q 120 310 180 370 Q 250 420 320 370 Q 380 310 345 225 Q 250 310 155 225 Z" 
+          fill="#ffffff"/>
+
+    <!-- Doodle Arrows & Handwritten Annotations -->
+    <path d="M 370 140 Q 430 120 420 80" stroke="#2563eb" stroke-dasharray="4 4"/>
+    <text x="420" y="70" fill="#2563eb" font-family="'Comic Sans MS', cursive, sans-serif" font-size="12">curly hair!</text>
+
+    <path d="M 360 330 Q 420 350 410 390" stroke="#2563eb" stroke-dasharray="4 4"/>
+    <text x="410" y="410" fill="#2563eb" font-family="'Comic Sans MS', cursive, sans-serif" font-size="12">white beard</text>
+  </g>
+
+  <!-- Handwritten Title -->
+  <text x="250" y="465" fill="#1e293b" font-family="'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">~ Elder Vibe Coder Sketch ~</text>
+</svg>
